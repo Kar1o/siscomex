@@ -1,0 +1,16 @@
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/model/User.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/dao/AbstractDao.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/dao/UserDaoImpl.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/service/CustomUserDetailsService.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/model/UserProfile.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/configuration/HelloWorldConfiguration.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/model/UserProfileType.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/configuration/SecurityWebApplicationInitializer.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/service/UserServiceImpl.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/configuration/HibernateConfiguration.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/dao/UserDao.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/service/UserService.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/model/State.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/controller/HelloWorldController.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/configuration/SpringMvcInitializer.java
+/home/kar1o/Workspaces/spring/springSecurity/src/main/java/com/websystique/springsecurity/configuration/SecurityConfiguration.java
