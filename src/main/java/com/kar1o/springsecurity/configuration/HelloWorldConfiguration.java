@@ -9,12 +9,14 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.kar1o.springsecurity")
 public class HelloWorldConfiguration extends WebMvcConfigurerAdapter {
-	
+
 	@Bean(name="HelloWorld")
 	public ViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
@@ -23,6 +25,14 @@ public class HelloWorldConfiguration extends WebMvcConfigurerAdapter {
 		viewResolver.setSuffix(".jsp");
 
 		return viewResolver;
+	}
+
+	@Bean(name="multipartResolver")
+	public CommonsMultipartResolver commonsMultipartResolver(){
+	    CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
+	    commonsMultipartResolver.setMaxFileSize("10MB");
+	    commonsMultipartResolver.setMaxRequestSize("50MB");
+	    return commonsMultipartResolver.createCommonsMultipartResolver();
 	}
 
 	/*

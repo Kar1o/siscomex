@@ -1,16 +1,3 @@
-com/kar1o/springsecurity/service/UserService.class
-com/kar1o/springsecurity/configuration/SecurityConfiguration.class
-com/kar1o/springsecurity/dao/AbstractDao.class
 com/kar1o/springsecurity/controller/HelloWorldController.class
-com/kar1o/springsecurity/configuration/HelloWorldConfiguration.class
-com/kar1o/springsecurity/model/User.class
+com/kar1o/springsecurity/service/FileService.class
 com/kar1o/springsecurity/model/State.class
-com/kar1o/springsecurity/dao/UserDao.class
-com/kar1o/springsecurity/configuration/HibernateConfiguration.class
-com/kar1o/springsecurity/service/UserServiceImpl.class
-com/kar1o/springsecurity/configuration/SpringMvcInitializer.class
-com/kar1o/springsecurity/model/UserProfileType.class
-com/kar1o/springsecurity/configuration/SecurityWebApplicationInitializer.class
-com/kar1o/springsecurity/model/UserProfile.class
-com/kar1o/springsecurity/service/CustomUserDetailsService.class
-com/kar1o/springsecurity/dao/UserDaoImpl.class
