@@ -17,6 +17,7 @@
 /home/kar1o/Workspaces/spring/siscomex/src/main/java/com/kar1o/springsecurity/service/XmlServiceImpl.java
 /home/kar1o/Workspaces/spring/siscomex/src/main/java/com/kar1o/springsecurity/dao/UserDao.java
 /home/kar1o/Workspaces/spring/siscomex/src/main/java/com/kar1o/springsecurity/dao/AbstractDao.java
+/home/kar1o/Workspaces/spring/siscomex/src/main/java/com/kar1o/springsecurity/service/FileService.java
 /home/kar1o/Workspaces/spring/siscomex/src/main/java/com/kar1o/springsecurity/configuration/HelloWorldConfiguration.java
 /home/kar1o/Workspaces/spring/siscomex/src/main/java/com/kar1o/springsecurity/model/State.java
 /home/kar1o/Workspaces/spring/siscomex/src/main/java/com/kar1o/springsecurity/controller/HelloWorldController.java

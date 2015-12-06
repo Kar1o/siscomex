@@ -2,17 +2,16 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Welcome page</title>
 </head>
 <body>
-	Greeting : ${name}
-	<br />
-	Your password is: ${password} <br></br>
-	<br />
-	<br />
 
-	<h1>This is a welcome Page.</h1>
+<div class="container-fluid">
+    <%@ include file="/WEB-INF/views/shared/header.jsp" %>
 
+	<h1>Greeting :</h1> <h3> ${name} </h3>
+
+
+</div>
 </body>
 </html>

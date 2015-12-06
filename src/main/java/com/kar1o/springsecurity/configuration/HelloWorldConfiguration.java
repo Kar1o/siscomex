@@ -27,13 +27,13 @@ public class HelloWorldConfiguration extends WebMvcConfigurerAdapter {
 		return viewResolver;
 	}
 
-	@Bean(name="multipartResolver")
+	/*@Bean(name="multipartResolver")
 	public CommonsMultipartResolver commonsMultipartResolver(){
 	    CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
-	    commonsMultipartResolver.setMaxFileSize("10MB");
-	    commonsMultipartResolver.setMaxRequestSize("50MB");
-	    return commonsMultipartResolver.createCommonsMultipartResolver();
-	}
+	    //10 MB
+	    commonsMultipartResolver.setMaxUploadSize(10485760);
+	    return commonsMultipartResolver;
+	}*/
 
 	/*
      * Configure ResourceHandlers to serve static resources like CSS/ Javascript etc...

@@ -30,17 +30,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 	    http.authorizeRequests()
 	    .antMatchers("/", "/home").permitAll()
-	    .antMatchers("/home").hasRole("USER")
-	    .antMatchers(HttpMethod.POST, "/importar").hasRole("USER")
-	    .antMatchers(HttpMethod.POST, "/resultado").hasRole("USER")
+	    .antMatchers("/menu").access("hasRole('DBA') or hasRole('ADMIN') or hasRole('USER')")
+	    .antMatchers(HttpMethod.POST, "/importar").access("hasRole('DBA') or hasRole('ADMIN') or hasRole('USER')")
+	    .antMatchers(HttpMethod.POST, "/resultado").access("hasRole('DBA') or hasRole('ADMIN') or hasRole('USER')")
+	    .antMatchers(HttpMethod.POST, "/upload").access("hasRole('DBA') or hasRole('ADMIN') or hasRole('USER')")
 	  	//.antMatchers("/admin/**").access("hasRole('ADMIN')")
-	  	.antMatchers("/admin/**").hasRole("ADMIN")
+	  	.antMatchers("/admin/**").access("hasRole('DBA') or hasRole('ADMIN')")
 	  	//.antMatchers("/db/**").access("hasRole('ADMIN') and hasRole('DBA')")
-	  	.antMatchers("/dba/**").hasRole("DBA")
-	  	//.and().formLogin().loginPage("/login")
+	  	.antMatchers("/db/**").hasRole("DBA")
 	  	.and().formLogin().loginPage("/login").successHandler(customSuccessHandler)
 	  	.usernameParameter("ssoId").passwordParameter("password")
 	  	.and().csrf()
-	  	.and().exceptionHandling().accessDeniedPage("/acessDenied");
+	  	.and().exceptionHandling().accessDeniedPage("/accessDenied");
 	}
 }

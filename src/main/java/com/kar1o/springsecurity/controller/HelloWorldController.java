@@ -16,32 +16,28 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 import com.kar1o.springsecurity.service.FileService;
+import com.kar1o.springsecurity.model.Xml;
 
 @Controller
 public class HelloWorldController {
+
+    @Autowired
+    private FileService fileService;
 
 
 	@RequestMapping(value = {"/", "/home"}, method = RequestMethod.GET)
 	public String homePage(ModelMap model) {
 
-		model.addAttribute("greeting", "Hi, Welcome to mysite");
-		model.addAttribute("password", getPassword());
 		model.addAttribute("name", getPrincipal());
 		return "welcome";
 	}
-
-    @RequestMapping(value = "/menu", method = RequestMethod.GET)
-    public String menuPage(ModelMap model) {
-
-        model.addAttribute("user", getPrincipal());
-        return "menu";
-    }
 
     @RequestMapping(value = "/importar", method = RequestMethod.GET)
     public String importarPage(ModelMap model) {
@@ -63,9 +59,6 @@ public class HelloWorldController {
 
 
     }*/
-
-    //@AutoWired
-    private FileService fileService;
 
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public ModelAndView uploadFile(@RequestParam("file") MultipartFile multipartFile){
@@ -89,13 +82,20 @@ public class HelloWorldController {
     }
 
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
-	public String adminPage(ModelMap model) {
+	public String adminPage(ModelMap model, @ModelAttribute("xml") Xml xml) {
+		model.addAttribute("name", getPrincipal());
 
-		model.addAttribute("user", getPrincipal());
 		return "admin";
 	}
 
-	@RequestMapping(value = "/dba", method = RequestMethod.GET)
+	@RequestMapping(value = "/menu", method = RequestMethod.GET)
+    public String menuPage(ModelMap model) {
+
+        model.addAttribute("user", getPrincipal());
+        return "menu";
+    }
+
+	@RequestMapping(value = "/db", method = RequestMethod.GET)
 	public String dbaPage(ModelMap model) {
 		model.addAttribute("user", getPrincipal());
 		return "dba";
@@ -133,20 +133,6 @@ public class HelloWorldController {
 			userName = principal.toString();
 		}
 		return userName;
-	}
-
-	private String getPassword(){
-		String userPassword = null;
-		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
-		if (principal instanceof UserDetails){
-			userPassword = ((UserDetails)principal).getPassword();
-		}
-			else{
-				userPassword = principal.toString();
-			}
-
-		return userPassword;
 	}
 
 }

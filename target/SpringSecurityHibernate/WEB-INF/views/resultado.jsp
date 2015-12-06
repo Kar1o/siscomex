@@ -1,29 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Siscomex - Sistema de Parametrizacao</title>
 		<title>Menu</title>
 		<link href="<c:url value='/static/css/bootstrap.css' />"  rel="stylesheet"></link>
 		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" />
-	
+
   </head>
   <body>
+
+    <%@ include file="/WEB-INF/views/shared/header.jsp" %>
 
     <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<h2 class="text-center">
-				Siscomex - Sistema de Parametrização
+			<h2 class="text-center"> Siscomex - Sistema de Parametrização </h2>
 				<br></br>
 				<br></br>
-
-				
-			</h2>
 		</div>
 	</div>
 	<div class="row">
@@ -31,7 +28,7 @@
 			<div class="row">
 				<div class="col-md-4">
 				<br></br>
-				
+
 				<br></br>
 				</div>
 				<div class="col-md-4">
@@ -44,11 +41,11 @@
 						<dt>
 							Alguma coisa
 						</dt>
-						
+
 						<dd>
 							Alguma descrição
 						</dd>
-						
+
 					</dl>
 					<br></br>
 						</div>
@@ -73,7 +70,7 @@
 						<dd>
 							Alguma descrição
 						</dd>
-						
+
 					</dl>
 					<br></br>
 						</div>
@@ -98,7 +95,7 @@
 						<dd>
 							Alguma descrição
 						</dd>
-						
+
 					</dl>
 					<br></br>
 						</div>
@@ -123,7 +120,7 @@
 						<dd>
 							Alguma descrição
 						</dd>
-						
+
 					</dl>
 					<br></br>
 						</div>

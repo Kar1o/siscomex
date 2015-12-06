@@ -1,61 +1,50 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Menu</title>
-		<link href="<c:url value='/static/css/bootstrap.css' />"  rel="stylesheet"></link>
+		<link href="<c:url value='/static/css/bootstrap.css' />"  rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" />
 	</head>
 
 	<body>
 
 
- <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<h3 class="text-center">
-				Siscomex - Sistema de Parametrização
-			</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-12">
-							 <br></br>
-							 <br></br>
-							 <br></br>
-							 <br></br>
-							 <br></br>
+<div class="container-fluid">
 
-							 <a href="<c:url value="/importar" />">
+	<%@ include file="/WEB-INF/views/shared/header.jsp" %>
+
+	<div class="row">
+		<div class="col-md-12">
+		    <div class="text-center">
+
+							<br /><br />
+							<br /><br />
+
+							<a href="<c:url value="/importar" />">
 							<button type="button" class="btn btn-primary">
-								Importar XML
+							    Analisar XML
 							</button>
 							</a>
-							<br></br>
-							<br></br>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
+
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+		    <div class="text-center">
+
+							<br /><br />
 
 							<a href="<c:url value="/admin" />">
 							<button type="button" class="btn btn-primary">
-								Parametrização
+								Parametros da analise
 							</button>
 							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-				</div>
-			</div>
+            </div>
 		</div>
 	</div>
 </div>
