@@ -6,7 +6,11 @@ select APP_USER.id, USER_PROFILE.type, sso_id, password from APP_USER left join 
 ER_PROFILE) on (APP_USER_USER_PROFILE.user_id=APP_USER.id AND APP_USER_USER_PROFILE.user_profile_id=USER_PROFILE.
 id);
 
+<<<<<<< HEAD
 insert into XML_CHECK values ( 1,'asdf', 123, 321, 222, '2000-04-12', '2000-04-13', 'ff', 'dd', 'empresao', 'empresad');
+=======
+
+>>>>>>> 4bfc8b899b399f5e7e5b9248caf37f9b5edf7439
 ------------------------------------------------------------------
 ----------------------SQL SCRIPT FOR LOGIN------------------------
 ------------------------------------------------------------------

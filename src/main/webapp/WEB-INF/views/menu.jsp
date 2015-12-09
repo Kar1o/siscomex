@@ -6,7 +6,10 @@
 	<head>
 		<title>Menu</title>
 		<link href="<c:url value='/static/css/bootstrap.css' />"  rel="stylesheet" />
+<<<<<<< HEAD
 		<link href="<c:url value='/static/css/style.css' />"  rel="stylesheet" />
+=======
+>>>>>>> 4bfc8b899b399f5e7e5b9248caf37f9b5edf7439
 		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" />
 	</head>
 
@@ -48,9 +51,12 @@
             </div>
 		</div>
 	</div>
+<<<<<<< HEAD
 	
 	<%@ include file="/WEB-INF/views/shared/logout.jsp" %>
 	
+=======
+>>>>>>> 4bfc8b899b399f5e7e5b9248caf37f9b5edf7439
 </div>
 
 

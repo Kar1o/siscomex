@@ -45,11 +45,19 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler{
 		}
 
 		if (isDba(roles)) {
+<<<<<<< HEAD
 			url = "/";
 		} else if (isAdmin(roles)) {
 			url = "/";
 		} else if (isUser(roles)) {
 			url = "/";
+=======
+			url = "/menu";
+		} else if (isAdmin(roles)) {
+			url = "/menu";
+		} else if (isUser(roles)) {
+			url = "/menu";
+>>>>>>> 4bfc8b899b399f5e7e5b9248caf37f9b5edf7439
 		} else {
 			url="/accessDenied";
 		}

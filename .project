@@ -20,16 +20,22 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+<<<<<<< HEAD
 		<buildCommand>
 			<name>org.hibernate.eclipse.console.hibernateBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
+=======
+>>>>>>> 4bfc8b899b399f5e7e5b9248caf37f9b5edf7439
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
+<<<<<<< HEAD
 		<nature>org.hibernate.eclipse.console.hibernateNature</nature>
+=======
+>>>>>>> 4bfc8b899b399f5e7e5b9248caf37f9b5edf7439
 	</natures>
 </projectDescription>
